@@ -18,6 +18,8 @@ The format expects the following fields:
 After creating your list and you can add your data into a list. For Icons, you can refer to Microsoft UI fabric.
 
 And here is the final result:
+
 ![looks like](https://github.com/Vishni92/QuickLink-List/blob/master/Quick%20Link.png)
 
 
+Follow more (https://github.com/pnp/sp-dev-list-formatting/tree/master/view-samples)
