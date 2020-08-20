@@ -1,0 +1,63 @@
+{
+    "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+    "hideColumnHeader": "true",
+    "hideSelection": true,
+    "rowFormatter": {
+        "elmType": "a",
+        "attributes": {
+            "href": "[$URL]",
+            "target": "=if([$NewTab] == true, '_blank', '')"
+        },
+        "style": {
+            "width": "115px",
+            "float": "left",
+            "text-decoration": "none"
+        },
+        "children": [
+            {
+                "elmType": "div",
+                "attributes": {
+                    "class": "ms-bgColor-themePrimary ms-bgColor-themeDark - hover ms-fontColor-white ms-fontColor-white - hover "
+                },
+                "style": {
+                    "display": "flex",
+                    "flex-wrap": "nowrap",
+                    "width": "100px",
+                    "height": "100px",
+                    "padding": "2px 2px 2px 2px",
+                    "max-height": "100px",
+                    "max-width": "100px",
+                    "margin-right": "5px",
+                    "margin-top": "10px",
+                    "box-shadow": "3px 3px 4px darkgrey"
+                },
+                "children": [
+                    {
+                        "elmType": "div",
+                        "style": {
+                            "text-align": "center",
+                            "padding": "12px",
+                            "margin": "auto"
+                        },
+                        "children": [
+                            {
+                                "elmType": "div",
+                                "attributes": {
+                                    "iconName": "[$Icon]",
+                                    "class": "ms-fontSize-xxl"
+                                }
+                            },
+                            {
+                                "elmType": "div",
+                                "attributes": {
+                                    "class": "sp-row-title ms-fontSize-s"
+                                },
+                                "txtContent": "[$Title]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
